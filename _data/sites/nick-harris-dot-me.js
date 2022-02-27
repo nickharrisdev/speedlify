@@ -12,8 +12,8 @@ module.exports = {
   },
   urls: [
     "https://www.nickharris.me/",
-    "https://www.nickharris.me/weekly-jams/",
-    "https://www.nickharris.me/web/discography/",
-    "https://www.nickharris.me/web/colophon/",
+    "https://www.nickharris.me/weekly-jams",
+    "https://www.nickharris.me/discography",
+    "https://www.nickharris.me/colophon",
   ],
 };
