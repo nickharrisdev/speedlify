@@ -32,8 +32,10 @@
   "dependencies": {
     "@11ty/eleventy": "0.12.1",
     "@11ty/eleventy-cache-assets": "^2.3.0",
+    "axios": "^0.21.1",
     "byte-size": "^7.0.1",
     "chartist": "^0.11.4",
+    "cheerio": "^1.0.0-rc.10",
     "cross-zip": "^4.0.0",
     "dotenv": "^8.2.0",
     "fast-glob": "^3.2.7",
