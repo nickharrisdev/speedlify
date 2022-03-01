@@ -16,5 +16,6 @@ module.exports = {
     "https://www.nickharris.me/discography",
     "https://www.nickharris.me/colophon",
     "https://www.nickharris.me/shows",
+    "https://www.nickharris.me/jams/dont-drop-me", // one of the daily jams
   ],
 };
