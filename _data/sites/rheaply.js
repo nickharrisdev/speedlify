@@ -1,9 +1,7 @@
 const getUrls = require("../../utils/fetch-urls");
 
-const sitemaps = [
-  "https://rheaply.com/page-sitemap.xml",
-  "https://rheaply.com/project-sitemap.xml",
-];
+// "https://rheaply.com/project-sitemap.xml" (blog templates sitemap), currently would add too many pages to check.
+const sitemaps = ["https://rheaply.com/page-sitemap.xml"];
 
 async function getAllUrls() {
   let urls = [];
@@ -53,6 +51,7 @@ module.exports = async function () {
 //   "https://rheaply.com/resources/blog/swipesense-interview/",
 //   "https://rheaply.com/resources/blog/how-to-transition-to-greener-lab-practices/",
 //   "https://rheaply.com/resources/podcasts/rheaply-on-rethink-global-podcast/",
+//
 //   "https://rheaply.com/resources/event-presentations/network-effect-from-neural-circuits-to-circular-economies/",
 //   "https://rheaply.com/resources/blog/rheaply-swalco-partnership/",
 //   "https://rheaply.com/",
