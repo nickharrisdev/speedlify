@@ -3,18 +3,30 @@ const getUrls = require("../../utils/fetch-urls");
 // "https://rheaply.com/project-sitemap.xml" (blog templates sitemap), currently would add too many pages to check.
 const sitemaps = ["https://rheaply.com/page-sitemap.xml"];
 
-async function getAllUrls() {
-  let urls = [];
-  await Promise.all(
-    sitemaps.map(async (sitemap) => {
-      const allUrls = await getUrls(sitemap);
-      allUrls.forEach((url) => urls.push(url));
-    })
-  );
+function getAllUrls() {
+  // top 10 urls 3/5/2022™
+  let urls = [
+    "https://rheaply.com/",
+    "https://rheaply.com/careers/",
+    "https://rheaply.com/features/",
+    "https://rheaply.com/about-us/",
+    "https://rheaply.com/resources-library/google-rews/",
+    "https://rheaply.com/press/",
+    "https://rheaply.com/solutions/construction-demolition/",
+    "https://rheaply.com/about-us/leadership/",
+    "https://rheaply.com/solutions/workplace-resources",
+    "https://rheaply.com/circular-economy/",
+  ];
+  // await Promise.all(
+  //   sitemaps.map(async (sitemap) => {
+  //     const allUrls = await getUrls(sitemap);
+  //     allUrls.forEach((url) => urls.push(url));
+  //   })
+  // );
   return urls;
 }
 
-module.exports = async function () {
+module.exports = function () {
   return {
     name: "rheaply.com", // optional, falls back to object key
     description: "Rheaply marketing web site",
@@ -27,7 +39,7 @@ module.exports = async function () {
       // Use "site" if sites are all on the same origin and share assets.
       freshChrome: "site",
     },
-    urls: await getAllUrls(),
+    urls: getAllUrls(),
   };
 };
 
